@@ -1,7 +1,3 @@
-import { useState } from 'react';
-import { Button, FormControl, Input } from '@chakra-ui/react';
-import { connectWeb3 } from '../../utils/web3';
-
 import React, { useState } from 'react';
 import { Button, FormControl, Input } from '@chakra-ui/react';
 import { connectWeb3 } from '../../utils/web3';
