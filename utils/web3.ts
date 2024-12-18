@@ -2,7 +2,7 @@ import { ethers } from 'ethers';
 
 export const connectWallet = async () => {
   if (!window.ethereum) throw new Error('MetaMask not found');
-  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  const provider = new ethers.BrowserProvider(window.ethereum);
   await provider.send('eth_requestAccounts', []);
   return provider;
 };
